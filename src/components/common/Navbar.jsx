@@ -29,7 +29,7 @@ const Navbar = () => {
       <ul className="list-none sm:flex hidden justify-end items-center flex-1" role="submenu1">
         {navLinks.map((nav, index) => (
           <li className='px-5' key={index} role="submenu1item">
-            <NavLink to={nav.path} end={nav.path !== 'products' ? true : false} id={nav.id} className={({ isActive }) => isActive ? `${linkStyleClasses}` + 'text-linkBlack bg-white rounded-2xl px-5 py-0.5' : `${linkStyleClasses}` + 'text-black'} onClick={() => nav.subMenu ? setDropDown(!dropdown) : setDropDown(false)}>
+            <NavLink to={nav.path} end={nav.path !== 'products' ? true : false} id={nav.id} aria-label={nav.title} className={({ isActive }) => isActive ? `${linkStyleClasses}` + 'text-linkBlack bg-white rounded-2xl px-5 py-0.5' : `${linkStyleClasses}` + 'text-black'} onClick={() => nav.subMenu ? setDropDown(!dropdown) : setDropDown(false)}>
               {nav.title}
               {
                 nav.subMenu ? <FontAwesomeIcon className="ml-2" icon={dropdown ? faChevronUp : faChevronDown} /> : null
@@ -41,7 +41,7 @@ const Navbar = () => {
                   {
                     nav.subMenu.map((menu, menuIndex) => (
                       <li className="mb-3 last:mb-0 hover:text-primaryGreen w-full hover:cursor-pointer" key={menuIndex} role="submenu2item">
-                        <NavLink to={menu.path} end={nav.path !== 'products' ? true : false} className="font-poppins w-full" onClick={() => setDropDown(!dropdown)} >{menu.title}</NavLink>
+                        <NavLink to={menu.path} end={nav.path !== 'products' ? true : false} aria-label={menu.title} className="font-poppins w-full" onClick={() => setDropDown(!dropdown)} >{menu.title}</NavLink>
                       </li>
                     ))
                   }
@@ -63,7 +63,7 @@ const Navbar = () => {
         <div className={`${!toggle ? "hidden" : "flex"} px-3 py-6 bg-white/80 shadow-lg absolute top-20 right-0 my-5 w-full h-[89%] min-w-[140px] rounded-xl z-40 sidebar`}>
           <ul className="list-none flex justify-center items-center flex-1 flex-col" role="menutoggle">
             {navLinks.map((nav, index) => (
-              <NavLink to={nav.path} end={nav.path !== 'products' ? true : false} className={({ isActive }) => isActive ? `${linkStyleClasses}` + 'text-white bg-primaryGreen rounded-4xl px-10 py-0.5' : `${linkStyleClasses}` + 'text-black'} key={index} onClick={() => setToggle(!toggle)}>
+              <NavLink to={nav.path} end={nav.path !== 'products' ? true : false} aria-label={nav.title} className={({ isActive }) => isActive ? `${linkStyleClasses}` + 'text-white bg-primaryGreen rounded-4xl px-10 py-0.5' : `${linkStyleClasses}` + 'text-black'} key={index} onClick={() => setToggle(!toggle)}>
                 {nav.title}
               </NavLink>
             ))}
