@@ -10,13 +10,19 @@ const Contact = () => {
                     <p className="text-3xl md:text-5xl font-poppins font-semibold uppercase text-primaryBlue">feel free to get in touch with us</p>
                     <div className="font-poppins pt-5 pb-10">
                         <form aria-label="Contact us form">
-                            <label for="fullname" className="uppercase font-semibold">Full Name</label>
-                            <input name="fullname" id="fullname" aria-labelledby="fullname" aria-label="fullName" type="text" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
-                            <label for="contactEmail" className="uppercase font-semibold">Email</label>
-                            <input name="contactEmail" id="contactEmail" aria-labelledby="contactEmail" aria-label="email" type="email" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
-                            <label for="contactMessage" className="uppercase font-semibold">Message</label>
-                            <textarea name="contactMessage" id="contactMessage" aria-labelledby="contactMessage" aria-label="message" rows="4" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true"></textarea>
-                            <button type="submit" title="Contact us form submit" aria-label="Contact Us Form Submit" aria-labelledby="Contact us form submit" className="float-right px-10 py-2 rounded-3xl text-white text-lg uppercase bg-primaryBlue" value="Submit" id="contactUsFormSubmitButton">submit</button>
+                            <label className="uppercase font-semibold">
+                                Full Name
+                                <input type="text" id="fullname" name="fullname" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
+                            </label>
+                            <label className="uppercase font-semibold">
+                                Email
+                                <input name="contactEmail" id="contactEmail" type="email" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
+                            </label>
+                            <label className="uppercase font-semibold">
+                                Message
+                                <textarea name="contactMessage" id="contactMessage" rows="4" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true"></textarea>
+                            </label>
+                            <button type="submit" title="Contact us form submit" aria-label="Contact Us Form Submit" className="float-right px-10 py-2 rounded-3xl text-white text-lg uppercase bg-primaryBlue" value="Submit" id="contactUsFormSubmitButton">submit</button>
                         </form>
                     </div>
                     <div className="font-poppins mt-20">
