@@ -31,7 +31,7 @@ const ProductHome = () => {
                      {renderCardName(card.name)}
                   </h2>
                   <Link to={card.path} aria-label={'See all products' + index} title="Link to see all products">
-                     <button title="See all products" aria-label="See All Products" aria-labelledby="See all products" className="font-poppins uppercase font-semibold text-white rounded-xl px-5 py-1 bg-primaryGreen hover:bg-primaryBlue transition-all" id="seeAllProductsButton">
+                     <button title="See all products" aria-label={'See All Products' + index} aria-labelledby="See all products" className="font-poppins uppercase font-semibold text-white rounded-xl px-5 py-1 bg-primaryGreen hover:bg-primaryBlue transition-all" id="seeAllProductsButton">
                         <span className="text-sm">See all products</span>
                      </button>
                   </Link>
