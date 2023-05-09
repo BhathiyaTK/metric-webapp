@@ -31,7 +31,7 @@ const PrivateLabel = () => {
                             Using our proprietary Metric 66, the only limit is your imagination.
                         </p>
                     </div>
-                    <p className="font-poppins text-sm mt-10">
+                    <p className="font-poppins text-lg mt-10">
                         — All products are manufactured at the comfort of our socially responsible plant located in Sri Lanka. —
                     </p>
                 </div>
