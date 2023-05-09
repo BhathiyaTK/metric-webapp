@@ -22,7 +22,7 @@ const Contact = () => {
                                 Message
                             </label>
                             <textarea id="contactMessage" name="contactMessage" rows="4" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true"></textarea>
-                            <button type="submit" title="Contact us form submit" aria-label="Contact Us Form Submit" aria-labelledby="Contact us form submit"
+                            <button type="submit" title="Contact us form submit" aria-label="Contact Us Form Submit"
                                 className="float-right px-10 py-2 rounded-3xl text-white text-lg uppercase bg-primaryBlue"
                                 value="Submit" id="contactUsFormSubmitButton">Send the Message</button>
                         </form>
