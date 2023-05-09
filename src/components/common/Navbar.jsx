@@ -10,7 +10,7 @@ import themeLogo from '../../assets/img/logo.webp';
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [dropdown, setDropDown] = useState(false);
-  let linkStyleClasses = `font-poppins cursor-pointer uppercase ${rdd.isMobile ? 'font-semibold text-[30px] mb-16 last:mb-0' : 'font-medium mr-10 last:mr-0'} `;
+  let linkStyleClasses = `font-poppins cursor-pointer uppercase rounded-3xl px-5 py-1 text-linkBlack ${rdd.isMobile ? 'font-semibold text-[30px] mb-16 last:mb-0' : 'font-medium mr-10 last:mr-0'} `;
 
   return (
     <nav role="menu" className="w-full flex py-8 md:py-14 justify-between items-center navbar px-7 md:px-20" aria-label="App Menu">
@@ -30,7 +30,7 @@ const Navbar = () => {
         {navLinks.map((nav, index) => (
           <li className='px-5' key={index} role="menuitem">
             <NavLink to={nav.path} end={nav.path !== 'products' ? true : false} id={nav.id} aria-label={nav.title}
-              className={({ isActive }) => isActive ? `${linkStyleClasses}` + 'text-linkBlack bg-white rounded-2xl px-5 py-0.5' : `${linkStyleClasses}` + 'text-black'}
+              className={({ isActive }) => isActive ? `${linkStyleClasses}` + 'bg-primaryGreen' : `${linkStyleClasses}` + 'bg-white'}
               onClick={() => nav.subMenu ? setDropDown(!dropdown) : setDropDown(false)}>
               {nav.title}
               {
