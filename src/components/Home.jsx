@@ -4,7 +4,7 @@ import { productCards } from '../constants';
 const Home = () => {
     return (
         <div role="presentation" className="custom-container m-auto h-full">
-            <div role="presentation" className="block md:flex md:flex-row items-start justify-center md:space-x-16 absolute top-56 md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-y-1/2 w-4/5">
+            <div role="main" className="block md:flex md:flex-row items-start justify-center md:space-x-16 absolute top-56 md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-y-1/2 w-4/5">
                 {productCards.map((card, index) => (
                     <div role="presentation" className="w-full md:w-1/3 text-center mb-16 md:mb-0" key={index}>
                         <div role="presentation" className="flex flex-row space-x-7 items-center">
@@ -15,7 +15,7 @@ const Home = () => {
                                 <img src={card.imageTwo} alt="image-two" />
                             </div>
                         </div>
-                        <div role="contentinfo" aria-label='Product categories' className="bg-primaryGreen px-2 py-3 rounded-3xl mt-10 md:mt-20">
+                        <div role="contentinfo" aria-label='Three main product categories of metric' className="bg-primaryGreen px-2 py-3 rounded-3xl mt-10 md:mt-20">
                             <Link to={'products/' + card.path} aria-label={card.name} role="link">
                                 <h2 className="uppercase text-linkBlack hover:text-primaryBlue transition-all font-poppins font-semibold text-lg md:text-2xl lg:text-4xl mb-2">
                                     {card.name}
