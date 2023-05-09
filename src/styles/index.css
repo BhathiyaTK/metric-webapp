@@ -10,6 +10,10 @@
     --green: #BBD92A;
 }
 
+body {
+    font-size: 18px !important;
+}
+
 .custom-container {
     width: 80% !important;
 }

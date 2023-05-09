@@ -43,7 +43,7 @@ const DriftToSleep = () => {
                                                          {
                                                             sType.pieces.map((piece, indexFour) => (
                                                                <a href={piece.url} aria-label={'Select pair amount ' + indexFour} title="Link for order number of pairs from amazon" target="_blank" key={indexFour} accessKey={'pairLink' + indexFour}>
-                                                                  <span className="bg-primaryBlue hover:bg-primaryGreen rounded-lg px-2 py-1 text-lg font-poppins text-white">{piece.pair}</span>
+                                                                  <span className="bg-primaryBlue hover:bg-primaryGreen rounded-lg px-2 py-1 font-poppins text-white">{piece.pair}</span>
                                                                </a>
                                                             ))
                                                          }

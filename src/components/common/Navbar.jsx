@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from 'react-router-dom';
-import { close, logo, menu } from "../../assets";
+import { close, menu } from "../../assets";
 import { navLinks } from "../../constants";
 import * as rdd from 'react-device-detect';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -10,10 +10,10 @@ import themeLogo from '../../assets/img/logo.webp';
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [dropdown, setDropDown] = useState(false);
-  let linkStyleClasses = `font-poppins cursor-pointer uppercase ${rdd.isMobile ? 'font-semibold text-[30px] mb-16 last:mb-0' : 'font-medium text-[14px] mr-10 last:mr-0'} `;
+  let linkStyleClasses = `font-poppins cursor-pointer uppercase ${rdd.isMobile ? 'font-semibold text-[30px] mb-16 last:mb-0' : 'font-medium mr-10 last:mr-0'} `;
 
   return (
-    <nav role="menu" className="w-full flex py-8 md:py-14 justify-between items-center navbar px-7 md:px-20" aria-label="AppMenu">
+    <nav role="menu" className="w-full flex py-8 md:py-14 justify-between items-center navbar px-7 md:px-20" aria-label="App Menu">
       <div className="custom-shape-divider-top-1668835711">
         <svg role="presentation" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
           <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" className="shape-fill"></path>
