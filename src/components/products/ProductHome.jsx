@@ -32,7 +32,8 @@ const ProductHome = () => {
                   </h2>
                   <Link to={card.path} aria-label={'See all products' + index} title="Link to see all products">
                      <button title="See all products" aria-label={'See All Products' + index}
-                        className="font-poppins uppercase font-semibold text-white text-2xl rounded-xl px-5 py-1 bg-primaryGreen hover:bg-primaryBlue transition-all" id="seeAllProductsButton">
+                        className="font-poppins uppercase font-semibold text-white text-2xl rounded-xl px-5 py-1 bg-primaryGreen hover:bg-primaryBlue transition-all"
+                        id={'seeAllProductsButton' + index}>
                         See all products
                      </button>
                   </Link>
