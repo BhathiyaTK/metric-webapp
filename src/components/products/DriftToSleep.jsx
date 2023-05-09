@@ -24,7 +24,9 @@ const DriftToSleep = () => {
                                     {
                                        type.amazonLink ?
                                           <div className="my-10 text-center">
-                                             <a href={type.amazonLink} aria-label="Order on amazon" title="Direct amazon order link for the prduct" target="_blank" className="font-poppins uppercase font-semibold text-white text-xl rounded-xl px-5 py-2 bg-primaryGreen hover:bg-primaryBlue transition-all" accessKey={type.amazonLink}>order on amazon</a>
+                                             <a href={type.amazonLink} aria-label="Order on amazon" title="Direct amazon order link for the prduct" target="_blank"
+                                                className="font-poppins uppercase font-semibold text-white text-xl rounded-xl px-5 py-2 bg-primaryGreen hover:bg-primaryBlue transition-all"
+                                                accessKey={type.amazonLink}>order on amazon</a>
                                           </div> : null
                                     }
                                     {

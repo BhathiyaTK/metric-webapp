@@ -19,7 +19,8 @@ const CupsAndUnderwareHome = () => {
                            </div>
                            <div className="text-center my-14">
                               <span className="text-center">
-                                 <Link to={product.path} aria-label={'See all products ' + index} title="Link to view all products" className="px-10 py-5 rounded-4xl font-poppins font-semibold text-white uppercase bg-primaryBlue hover:bg-primaryGreen transition-all">See all products</Link>
+                                 <Link to={product.path} aria-label={'See all products ' + index} title="Link to view all products"
+                                    className="px-10 py-5 rounded-4xl font-poppins font-semibold text-white uppercase bg-primaryBlue hover:bg-primaryGreen transition-all">See all products</Link>
                               </span>
                            </div>
                            <div className="mt-10 text-center">
