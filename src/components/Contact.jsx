@@ -33,13 +33,13 @@ const Contact = () => {
                         <div className="flex items-center space-x-3 ml-1 mb-2.5">
                             <img src={email} alt="email" className="w-5" />
                             <span className="text-primaryBlue hover:underline underline-offset-4">
-                                <a href="mailto:info@metricproducts.com" title="Contact us email" accessKey="contact Us Email">info@metricproducts.com</a>
+                                <a href="mailto:info@metricproducts.com" aria-label="Contact metric company by sending an email" title="Contact us email" accessKey="contact Us Email">info@metricproducts.com</a>
                             </span>
                         </div>
                         <div className="flex items-center space-x-3 ml-1">
                             <img src={phoneCall} alt="phone-call" className="w-5" />
                             <span>
-                                <a href="tel:+13108159000" title="Contact us phone number" className="text-primaryBlue hover:underline underline-offset-4" accessKey="contactUsPhone">1.310.815.9000</a>
+                                <a href="tel:+13108159000" aria-label="Contact metric company by direct dialing" title="Contact us phone number" className="text-primaryBlue hover:underline underline-offset-4" accessKey="contactUsPhone">1.310.815.9000</a>
                             </span>
                         </div>
                     </div>
