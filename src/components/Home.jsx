@@ -15,7 +15,7 @@ const Home = () => {
                                 <img src={card.imageTwo} alt="image-two" />
                             </div>
                         </div>
-                        <div role="presentation" className="bg-primaryGreen px-2 py-3 rounded-3xl mt-10 md:mt-20">
+                        <div role="contentinfo" aria-label='Product categories' className="bg-primaryGreen px-2 py-3 rounded-3xl mt-10 md:mt-20">
                             <Link to={'products/' + card.path} aria-label={card.name} role="link">
                                 <h2 className="uppercase text-linkBlack hover:text-primaryBlue transition-all font-poppins font-semibold text-lg md:text-2xl lg:text-4xl mb-2">
                                     {card.name}
