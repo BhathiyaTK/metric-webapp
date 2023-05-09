@@ -21,7 +21,7 @@ const Home = () => {
                                     {card.name}
                                 </h2>
                             </Link>
-                            <span role="heading" aria-level="6" className="uppercase font-poppins font-medium text-lg text-linkBlack">{card.subName}</span>
+                            <span className="uppercase font-poppins font-medium text-lg text-linkBlack">{card.subName}</span>
                         </div>
                     </div>
                 ))}
