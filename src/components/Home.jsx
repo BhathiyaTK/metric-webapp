@@ -4,7 +4,7 @@ import { productCards } from '../constants';
 const Home = () => {
     return (
         <div role="presentation" className="custom-container m-auto h-full">
-            <h1 className="invisible">Metric home page</h1>
+            <h1 title='Main page' className="invisible">Metric main page</h1>
             <div role="main" className="block md:flex md:flex-row items-start justify-center md:space-x-16 absolute top-56 md:top-1/2 left-1/2 -translate-x-1/2 md:-translate-y-1/2 w-4/5">
                 {productCards.map((card, index) => (
                     <div role="presentation" className="w-full md:w-1/3 text-center mb-16 md:mb-0" key={index}>

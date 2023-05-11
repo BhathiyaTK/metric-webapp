@@ -4,6 +4,7 @@ import contactImg from './../assets/img/contact-us.webp';
 const Contact = () => {
     return (
         <div className="custom-container mx-auto py-20">
+            <h1 title='Contact us page' className="invisible">Contact us page</h1>
             <div className="grid sm:grid-col-1 md:grid-cols-2 gap-20 place-items-center">
                 <div>
                     <h1 className="text-5xl md:text-7xl font-poppins font-bold uppercase text-primaryGreen mb-5">contact us</h1>

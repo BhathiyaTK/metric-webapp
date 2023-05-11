@@ -3,6 +3,7 @@ import { BottomBar } from './';
 const PrivateLabel = () => {
     return (
         <>
+            <h1 title='Private label page' className="invisible">Private label page</h1>
             <div className="custom-container mx-auto pt-20">
                 <h1 className="text-5xl font-poppins font-bold uppercase text-primaryGreen text-center mb-10">Private Label</h1>
                 <p className="text-justify font-poppins mb-10">

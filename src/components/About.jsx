@@ -4,6 +4,7 @@ import { BottomBar } from "./";
 const About = () => {
     return (
         <>
+            <h1 title='About us page' className="invisible">About us page</h1>
             <div className="custom-container mx-auto pt-20">
                 {
                     aboutUsSections.map((section, index) => (

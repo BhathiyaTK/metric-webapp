@@ -2,7 +2,10 @@ import { Outlet } from 'react-router-dom';
 
 const Products = () => {
    return (
-      <Outlet />
+      <>
+         <h1 title='Products page' className="invisible">Products page</h1>
+         <Outlet />
+      </>
    );
 }
 
