@@ -19,6 +19,7 @@ import DriftToSleep from "./products/DriftToSleep";
 import BraMoldedCup from "./products/BraMoldedCup";
 import BraUnderwires from "./products/BraUnderwires";
 import Modal from "./Modal";
+import SkipLink from "./SkipLink";
 
 export {
   Navbar,
@@ -42,4 +43,5 @@ export {
   BraMoldedCup,
   BraUnderwires,
   Modal,
+  SkipLink
 };

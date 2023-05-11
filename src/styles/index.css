@@ -69,6 +69,18 @@ body {
     box-shadow: 8px 8px 0px 0px var(--green);
 }
 
+.skip-link {
+    margin-right: 1rem;
+    position: absolute;
+    transform: translateX(-200%);
+    transition: transform 0.3s;
+}
+
+.skip-link:focus {
+    position: static;
+    transform: translateX(0);
+}
+
 @media screen and (max-device-width: 400px) {
     .custom-shape-divider-top-1668835711 svg {
         height: 120px;

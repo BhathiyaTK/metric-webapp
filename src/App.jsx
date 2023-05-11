@@ -1,10 +1,14 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Navbar, Home, PrivateLabel, About, Contact, Products, ComfortFitPets, DriftToSleep, CupsAndUnderware, BraMoldedCup, BraUnderwires, ProductHome, CupsAndUnderwareHome, ComfortFitPetsHome, FitInstructionsColder, FitInstructionsWarmer, FitInstructionsInsidePlush, FitInstructionsSoftPadded, FitInstructionsUltraSoftPadded } from './components';
+import { Navbar, Home, PrivateLabel, About, Contact, Products, ComfortFitPets, DriftToSleep, CupsAndUnderware, BraMoldedCup, BraUnderwires, ProductHome, CupsAndUnderwareHome, ComfortFitPetsHome, FitInstructionsColder, FitInstructionsWarmer, FitInstructionsInsidePlush, FitInstructionsSoftPadded, FitInstructionsUltraSoftPadded, SkipLink } from './components';
+
 
 const App = () => {
   return (
     <>
+      <SkipLink className="primary skip-link">
+        <button type="button">Skip Navigation Links</button>
+      </SkipLink>
       <Navbar />
       <Routes>
         <Route path="" element={<Home />} />
