@@ -27,9 +27,9 @@ const ProductHome = () => {
                      </div>
                   </div>
 
-                  <h2 className="capitalize text-primaryBlue font-poppins font-semibold text-2xl lg:text-5xl mt-10 mb-3 md:mt-14 md:mb-5">
+                  <h1 className="capitalize text-primaryBlue font-poppins font-semibold text-2xl lg:text-5xl mt-10 mb-3 md:mt-14 md:mb-5">
                      {renderCardName(card.name)}
-                  </h2>
+                  </h1>
                   <Link to={card.path} aria-label={'See all products' + index} title="Link to see all products">
                      <button title="See all products" aria-label={'See All Products' + index}
                         className="font-poppins uppercase font-semibold text-white text-2xl rounded-xl px-5 py-1 bg-primaryGreen hover:bg-primaryBlue transition-all"

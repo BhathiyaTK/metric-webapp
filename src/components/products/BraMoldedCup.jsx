@@ -20,13 +20,13 @@ const BraMoldedCup = () => {
          <div className="custom-container mx-auto pt-20">
             <h1 className="text-4xl font-poppins font-bold capitalize text-primaryGreen text-center md:text-left">cups and underwires for<br />intimate apparel</h1>
             <div className="w-full my-4 border border-t-primaryBlue"></div>
-            <h1 className="text-4xl md:text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mt-14">bra molded cup</h1>
+            <h2 className="text-4xl md:text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mt-14">bra molded cup</h2>
             <div className="block md:flex md:flex-row justify-between md:space-x-10">
                {
                   productCards[2].categories[0].types.map((type, index) => (
                      <div key={index}>
                         <div className="mt-10 mb-24 md:mb-0">
-                           <h1 className="text-3xl font-poppins font-semibold uppercase text-center text-primaryGreen mb-10">{renderCardName(type.title)}</h1>
+                           <h3 className="text-3xl font-poppins font-semibold uppercase text-center text-primaryGreen mb-10">{renderCardName(type.title)}</h3>
                            {
                               type.images.map((img, imgIndex) => (
                                  <div key={imgIndex} className="w-full mx-auto rounded-tr-4xl rounded-bl-4xl overflow-hidden mb-10">

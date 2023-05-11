@@ -20,13 +20,13 @@ const PrivateLabel = () => {
                 </ul>
                 <div className="font-poppins text-center mt-10">
                     <div className="my-7">
-                        <h1 className="text-3xl font-semibold font-poppins text-dimDark">All products are customizable.</h1>
+                        <h2 className="text-3xl font-semibold font-poppins text-dimDark">All products are customizable.</h2>
                         <p className="mt-2">
                             Send us a sketch and we'll get your prototype done in less than 5 days.
                         </p>
                     </div>
                     <div className="my-7">
-                        <h1 className="text-2xl font-semibold font-poppins text-dimDark">We build what you desire.</h1>
+                        <h2 className="text-2xl font-semibold font-poppins text-dimDark">We build what you desire.</h2>
                         <p className="mt-2">
                             Using our proprietary Metric 66, the only limit is your imagination.
                         </p>

@@ -17,11 +17,11 @@ const Home = () => {
                         </div>
                         <div role="contentinfo" aria-label='Three main product categories of metric' className="bg-primaryGreen px-2 py-3 rounded-3xl mt-10 md:mt-20">
                             <Link to={'products/' + card.path} aria-label={card.name} role="link">
-                                <h2 className="uppercase text-linkBlack hover:text-primaryBlue transition-all font-poppins font-semibold text-2xl md:text-3xl lg:text-4xl mb-2">
+                                <h1 className="uppercase text-linkBlack hover:text-primaryBlue transition-all font-poppins font-semibold text-2xl md:text-3xl lg:text-4xl mb-2">
                                     {card.name}
-                                </h2>
+                                </h1>
                             </Link>
-                            <h3 className="uppercase font-poppins font-medium text-2xl text-linkBlack">{card.subName}</h3>
+                            <h2 className="uppercase font-poppins font-medium text-2xl text-linkBlack">{card.subName}</h2>
                         </div>
                     </div>
                 ))}

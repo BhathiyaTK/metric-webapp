@@ -11,7 +11,7 @@ const DriftToSleep = () => {
                productCards[1].categories.map((product, indexOne) => (
                   <div key={indexOne}>
                      <div className="mt-10">
-                        <h1 className="text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mb-10">{product.title}</h1>
+                        <h2 className="text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mb-10">{product.title}</h2>
                         <div className="flex flex-row justify-center space-x-10">
                            {
                               product.types.map((type, indexTwo) => (

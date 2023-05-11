@@ -13,7 +13,7 @@ const CupsAndUnderwareHome = () => {
                   productCards[2].categories.map((product, index) => (
                      <div key={index}>
                         <div className="mt-10 mb-32 md:mb-0">
-                           <h1 className="text-4xl md:text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mb-10">{product.title}</h1>
+                           <h2 className="text-4xl md:text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mb-10">{product.title}</h2>
                            <div className="relative w-4/5 mx-auto rounded-6xl overflow-hidden green-shadow">
                               <img src={product.image} alt={`image-${index}`} className="w-full" />
                            </div>
