@@ -7,7 +7,7 @@ const Contact = () => {
             <h1 title='Contact us page' className="invisible">Contact us page</h1>
             <div className="grid sm:grid-col-1 md:grid-cols-2 gap-20 place-items-center">
                 <div>
-                    <h1 className="text-5xl md:text-7xl font-poppins font-bold uppercase text-primaryGreen mb-5">contact us</h1>
+                    <h2 className="text-5xl md:text-7xl font-poppins font-bold uppercase text-primaryGreen mb-5">contact us</h2>
                     <p className="text-3xl md:text-5xl font-poppins font-semibold uppercase text-primaryBlue">feel free to get in touch with us</p>
                     <div className="font-poppins pt-5 pb-10">
                         <form aria-label="Contact us form">
