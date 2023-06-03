@@ -10,19 +10,19 @@ const Contact = () => {
                     <h2 id="contact-us-form-section" className="text-5xl md:text-7xl font-poppins font-bold uppercase text-primaryGreen mb-5">contact us</h2>
                     <p className="text-3xl md:text-5xl font-poppins font-semibold uppercase text-primaryBlue">feel free to get in touch with us</p>
                     <div className="font-poppins pt-5 pb-10">
-                        <form aria-labelledby="contact-us-form">
-                            <label className="uppercase font-semibold">
+                        <form aria-label="contact-us-form">
+                            <label for="fullname" className="uppercase font-semibold">
                                 Full Name
-                                <input id="fullname" type="text" name="fullname" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
                             </label>
-                            <label className="uppercase font-semibold">
+                            <input id="fullname" type="text" name="fullname" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
+                            <label for="contact-email" className="uppercase font-semibold">
                                 Email
-                                <input id="contactEmail" name="contactEmail" type="email" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
                             </label>
-                            <label className="uppercase font-semibold">
+                            <input id="contact-email" name="contact-email" type="email" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
+                            <label for="contact-message" className="uppercase font-semibold">
                                 Message
-                                <textarea id="contactMessage" name="contactMessage" rows="4" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true"></textarea>
                             </label>
+                            <textarea id="contact-message" name="contact-message" rows="4" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true"></textarea>
                             <button type="submit" title="Contact us form submit" aria-label="send-the-message"
                                 className="float-right px-10 py-2 rounded-3xl text-white uppercase bg-primaryBlue"
                                 value="Submit" id="contact-us-form-submit-button" accesskey="h">Send the Message</button>

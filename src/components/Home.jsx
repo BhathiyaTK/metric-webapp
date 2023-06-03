@@ -9,14 +9,14 @@ const Home = () => {
                 {productCards.map((card, index) => (
                     <div role="presentation" className="w-full md:w-1/3 text-center mb-16 md:mb-0" key={index}>
                         <div role="presentation" className="flex flex-row space-x-7 items-center">
-                            <div role="img" aria-labelledby={'image-one-' + index} className="w-1/2 rounded-4xl overflow-hidden green-shadow">
+                            <div role="img" aria-label={'image-one-' + index} className="w-1/2 rounded-4xl overflow-hidden green-shadow">
                                 <img src={card.imageOne} aria-label={'image-one-' + index} alt={'image-one-' + index} />
                             </div>
-                            <div role="img" aria-labelledby={'image-two-' + index} className="w-1/2 rounded-4xl overflow-hidden green-shadow">
+                            <div role="img" aria-label={'image-two-' + index} className="w-1/2 rounded-4xl overflow-hidden green-shadow">
                                 <img src={card.imageTwo} aria-label={'image-one-' + index} alt={'image-two-' + index} />
                             </div>
                         </div>
-                        <div role="contentinfo" aria-labelledby={'three-main-product-categories-' + index} className="bg-primaryGreen px-2 py-3 rounded-3xl mt-10 md:mt-20">
+                        <div role="contentinfo" aria-label={'three-main-product-categories-' + index} className="bg-primaryGreen px-2 py-3 rounded-3xl mt-10 md:mt-20">
                             <Link to={'products/' + card.path} aria-label={'card-name-' + index} role="link">
                                 <div className="uppercase text-linkBlack hover:text-primaryBlue transition-all font-poppins font-semibold text-2xl md:text-3xl lg:text-4xl mb-2">
                                     {card.name}

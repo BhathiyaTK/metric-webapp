@@ -29,7 +29,7 @@ const Navbar = () => {
       <ul role="group" className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
           <li className='px-5' key={index} role="menuitem">
-            <NavLink to={nav.path} end={nav.path !== 'products' ? true : false} id={nav.id} aria-label={'menu-item-' + index}
+            <NavLink to={nav.path} end={nav.path !== 'products' ? true : false} id={nav.id} aria-label={'nav-item-' + index}
               className={({ isActive }) => isActive ? `${linkStyleClasses}` + 'bg-primaryGreen' : `${linkStyleClasses}` + 'bg-white'}
               onClick={() => nav.subMenu ? setDropDown(!dropdown) : setDropDown(false)}>
               {nav.title}
@@ -43,7 +43,7 @@ const Navbar = () => {
                   {
                     nav.subMenu.map((menu, menuIndex) => (
                       <li role="menuitem" className="mb-3 last:mb-0 hover:text-primaryGreen w-full hover:cursor-pointer" key={menuIndex}>
-                        <NavLink to={menu.path} end={nav.path !== 'products' ? true : false} aria-label={'sub-menu-item-' + menuIndex} className="font-poppins w-full"
+                        <NavLink to={menu.path} end={nav.path !== 'products' ? true : false} aria-label={'sub-nav-item-' + menuIndex} className="font-poppins w-full"
                           onClick={() => setDropDown(!dropdown)} >{menu.title}</NavLink>
                       </li>
                     ))
