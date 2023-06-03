@@ -10,22 +10,22 @@ const Contact = () => {
                     <h2 id="contact-us-form-section" className="text-5xl md:text-7xl font-poppins font-bold uppercase text-primaryGreen mb-5">contact us</h2>
                     <p className="text-3xl md:text-5xl font-poppins font-semibold uppercase text-primaryBlue">feel free to get in touch with us</p>
                     <div className="font-poppins pt-5 pb-10">
-                        <form aria-label="Contact us form">
-                            <label for="fullname" className="uppercase font-semibold">
+                        <form aria-labelledby="Contact-us-form">
+                            <label className="uppercase font-semibold">
                                 Full Name
+                                <input id="fullname" type="text" name="fullname" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
                             </label>
-                            <input id="fullname" type="text" name="fullname" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
-                            <label for="contactEmail" className="uppercase font-semibold">
+                            <label className="uppercase font-semibold">
                                 Email
+                                <input id="contactEmail" name="contactEmail" type="email" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
                             </label>
-                            <input id="contactEmail" name="contactEmail" type="email" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true" />
-                            <label for="contactMessage" className="uppercase font-semibold">
+                            <label className="uppercase font-semibold">
                                 Message
+                                <textarea id="contactMessage" name="contactMessage" rows="4" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true"></textarea>
                             </label>
-                            <textarea id="contactMessage" name="contactMessage" rows="4" className="border rounded-xl w-full px-5 py-2 mb-3 font-semibold bg-primaryGreen" required="true"></textarea>
-                            <button type="submit" title="Contact us form submit" aria-label="Contact Us Form Submit"
+                            <button type="submit" title="Contact us form submit" aria-labelledby="Contact Us Form Submit"
                                 className="float-right px-10 py-2 rounded-3xl text-white uppercase bg-primaryBlue"
-                                value="Submit" id="contactUsFormSubmitButton" accesskey="h">Send the Message</button>
+                                value="Submit" id="contact-Us-Form-Submit-Button" accesskey="h">Send the Message</button>
                         </form>
                     </div>
                     <div className="font-poppins mt-20">
@@ -36,13 +36,13 @@ const Contact = () => {
                         <div className="flex items-center space-x-3 ml-1 mb-2.5">
                             <img src={email} alt="email" className="w-5" />
                             <span className="text-primaryBlue hover:underline underline-offset-4">
-                                <a href="mailto:info@metricproducts.com" aria-label="Contact metric company by sending an email" title="Contact us email" accesskey="a">info@metricproducts.com</a>
+                                <a href="mailto:info@metricproducts.com" aria-labelledby="Contact metric company by sending an email" title="Contact us email" accesskey="a">info@metricproducts.com</a>
                             </span>
                         </div>
                         <div className="flex items-center space-x-3 ml-1">
                             <img src={phoneCall} alt="phone-call" className="w-5" />
                             <span>
-                                <a href="tel:+13108159000" aria-label="Contact metric company by direct dialing" title="Contact us phone number"
+                                <a href="tel:+13108159000" aria-labelledby="Contact metric company by direct dialing" title="Contact us phone number"
                                     className="text-primaryBlue hover:underline underline-offset-4" accesskey="b">1.310.815.9000</a>
                             </span>
                         </div>

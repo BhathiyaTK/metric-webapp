@@ -9,8 +9,8 @@ const About = () => {
                 {
                     aboutUsSections.map((section, index) => (
                         <div key={index}>
-                            <section aria-labelledby={'about-us-section-title-' + index}>
-                                <h2 id={'section-title-' + index} className="text-5xl font-poppins font-bold uppercase text-primaryGreen text-center mb-10">{section.title}</h2>
+                            <section aria-labelledby={'about-us-section-' + index}>
+                                <h2 id={'about-us-section-' + index} className="text-5xl font-poppins font-bold uppercase text-primaryGreen text-center mb-10">{section.title}</h2>
                                 <p className="text-center font-poppins mb-10">{section.description}</p>
                             </section>
                             {

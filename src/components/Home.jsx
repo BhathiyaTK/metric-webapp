@@ -9,15 +9,15 @@ const Home = () => {
                 {productCards.map((card, index) => (
                     <div role="presentation" className="w-full md:w-1/3 text-center mb-16 md:mb-0" key={index}>
                         <div role="presentation" className="flex flex-row space-x-7 items-center">
-                            <div role="img" aria-label='Image-one' className="w-1/2 rounded-4xl overflow-hidden green-shadow">
+                            <div role="img" aria-labelledby='Image-one' className="w-1/2 rounded-4xl overflow-hidden green-shadow">
                                 <img src={card.imageOne} alt="image-one" />
                             </div>
-                            <div role="img" aria-label='Image-two' className="w-1/2 rounded-4xl overflow-hidden green-shadow">
+                            <div role="img" aria-labelledby='Image-two' className="w-1/2 rounded-4xl overflow-hidden green-shadow">
                                 <img src={card.imageTwo} alt="image-two" />
                             </div>
                         </div>
-                        <div role="contentinfo" aria-label='Three main product categories of metric' className="bg-primaryGreen px-2 py-3 rounded-3xl mt-10 md:mt-20">
-                            <Link to={'products/' + card.path} aria-label={card.name} role="link">
+                        <div role="contentinfo" aria-labelledby='Three main product categories of metric' className="bg-primaryGreen px-2 py-3 rounded-3xl mt-10 md:mt-20">
+                            <Link to={'products/' + card.path} aria-labelledby={card.name} role="link">
                                 <div className="uppercase text-linkBlack hover:text-primaryBlue transition-all font-poppins font-semibold text-2xl md:text-3xl lg:text-4xl mb-2">
                                     {card.name}
                                 </div>

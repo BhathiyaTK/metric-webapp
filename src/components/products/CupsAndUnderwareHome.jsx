@@ -18,12 +18,12 @@ const CupsAndUnderwareHome = () => {
                         </div>
                         <div className="text-center my-14">
                            <span className="text-center">
-                              <Link to={product.path} aria-label={'See all products ' + index} title="Link to view all products"
+                              <Link to={product.path} aria-labelledby={'See all products ' + index} title="Link to view all products"
                                  className="px-10 py-5 rounded-4xl font-poppins font-semibold text-white uppercase bg-primaryBlue hover:bg-primaryGreen transition-all">See all products</Link>
                            </span>
                         </div>
                         <div className="mt-10 text-center">
-                           <a href="mailto:info@metricproducts.com" aria-label="Contact metric company by sending a email" title="Contact us email on cups and underware products page" className="uppercase font-poppins font-semibold text-white bg-primaryGreen hover:bg-primaryBlue transition-all rounded-3xl px-5 py-2" accesskey="d">contact us</a>
+                           <a href="mailto:info@metricproducts.com" aria-labelledby="Contact metric company by sending a email" title="Contact us email on cups and underware products page" className="uppercase font-poppins font-semibold text-white bg-primaryGreen hover:bg-primaryBlue transition-all rounded-3xl px-5 py-2" accesskey="d">contact us</a>
                         </div>
                      </section>
                   ))
