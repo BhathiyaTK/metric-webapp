@@ -3,7 +3,7 @@ import { productCards } from '../../constants';
 
 const FitInstructionsUltraSoftPadded = () => {
    return (
-      <div className="custom-container mx-auto pt-40">
+      <main className="custom-container mx-auto pt-40">
          <h1 className="text-4xl font-poppins font-bold capitalize text-primaryGreen text-center md:text-left mb-10">Fit Instructions: Ultra Soft Padded Dog Collar</h1>
          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-10">
             {productCards[0].categories[1].types[1].fitInstructions.map((fit, index) => (
@@ -16,7 +16,7 @@ const FitInstructionsUltraSoftPadded = () => {
                </div>
             ))}
          </div>
-      </div>
+      </main>
    )
 }
 

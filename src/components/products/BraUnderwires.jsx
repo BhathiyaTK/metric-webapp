@@ -16,16 +16,16 @@ function renderCardName(param) {
 
 const ComfortFitPets = () => {
    return (
-      <>
+      <main>
          <div className="custom-container mx-auto pt-20">
             <h1 className="text-4xl font-poppins font-bold capitalize text-primaryGreen">cups and underwires for<br />intimate apparel</h1>
             <div className="w-full my-4 border border-t-primaryBlue"></div>
-            <h2 className="text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mt-14">bra underwires</h2>
-            <div className="flex flex-row justify-center space-x-10">
-               {
-                  productCards[2].categories[1].types.map((type, index) => (
-                     <div key={index}>
-                        <div className="mt-10">
+            <section aria-labelledby="bra-underwires-section">
+               <h2 id="bra-underwires-section" className="text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mt-14">bra underwires</h2>
+               <div className="flex flex-row justify-center space-x-10">
+                  {
+                     productCards[2].categories[1].types.map((type, index) => (
+                        <div className="mt-10" key={index}>
                            <h3 className="text-3xl font-poppins font-semibold uppercase text-center text-primaryGreen mb-10">
                               {productCards[2].categories[1].title === 'bra underwires' ? type.title : renderCardName(type.title)}
                            </h3>
@@ -37,13 +37,13 @@ const ComfortFitPets = () => {
                               ))
                            }
                         </div>
-                     </div>
-                  ))
-               }
-            </div>
+                     ))
+                  }
+               </div>
+            </section>
          </div>
          <BottomBar />
-      </>
+      </main>
    );
 }
 

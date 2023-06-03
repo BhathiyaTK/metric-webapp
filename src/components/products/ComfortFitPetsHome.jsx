@@ -4,15 +4,15 @@ import { productCards } from '../../constants';
 
 const ComfortFitPetsHome = () => {
    return (
-      <>
+      <main>
          <div className="custom-container mx-auto pt-20">
             <h1 className="text-4xl font-poppins font-bold capitalize text-primaryGreen text-center md:text-left">comfort fit pets</h1>
             <div className="w-full my-4 border border-t-primaryBlue"></div>
             {
                productCards[0].categories.map((product, indexOne) => (
                   <div key={indexOne}>
-                     <div className="mt-10">
-                        <h2 className="text-4xl md:text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mb-10">{product.title}</h2>
+                     <section aria-labelledby={product.title} className="mt-10">
+                        <h2 id={product.title} className="text-4xl md:text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mb-10">{product.title}</h2>
                         <div className="block md:flex md:flex-row justify-center md:space-x-10">
                            {
                               product.types.map((type, indexTwo) => (
@@ -33,7 +33,7 @@ const ComfortFitPetsHome = () => {
                                        </Link>
                                     </div>
                                     <div className="w-full rounded-lg border overflow-hidden bg-white p-4">
-                                       <h3 className="uppercase font-bold text-center">Available Colors</h3>
+                                       <h4 className="uppercase font-bold text-center">Available Colors</h4>
                                        <div className="grid sm:grid-cols-3 md:grid-cols-5 gap-4 mt-3">
                                           {
                                              type.colors.map((colorImg, colorIndex) => (
@@ -48,7 +48,7 @@ const ComfortFitPetsHome = () => {
                               ))
                            }
                         </div>
-                     </div>
+                     </section>
                      {
                         indexOne < productCards[0].categories.length - 1 ? <div className="w-full my-16 border border-primaryBlue"></div> : null
                      }
@@ -58,7 +58,7 @@ const ComfortFitPetsHome = () => {
             {/* <Modal /> */}
          </div>
          <BottomBar />
-      </>
+      </main>
    );
 }
 

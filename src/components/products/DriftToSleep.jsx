@@ -3,15 +3,15 @@ import { productCards } from '../../constants';
 
 const DriftToSleep = () => {
    return (
-      <>
+      <main>
          <div className="custom-container mx-auto pt-20">
             <h1 className="text-4xl font-poppins font-bold capitalize text-primaryGreen">drift to sleep</h1>
             <div className="w-full my-4 border border-t-primaryBlue"></div>
             {
                productCards[1].categories.map((product, indexOne) => (
                   <div key={indexOne}>
-                     <div className="mt-10">
-                        <h2 className="text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mb-10">{product.title}</h2>
+                     <section aria-labelledby={product.title + '-section'} className="mt-10">
+                        <h2 id={product.title + '-section'} className="text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mb-10">{product.title}</h2>
                         <div className="flex flex-row justify-center space-x-10">
                            {
                               product.types.map((type, indexTwo) => (
@@ -57,7 +57,7 @@ const DriftToSleep = () => {
                               ))
                            }
                         </div>
-                     </div>
+                     </section>
                      {
                         indexOne < productCards[0].categories.length - 1 ? <div className="w-full my-16 border border-primaryBlue"></div> : null
                      }
@@ -66,7 +66,7 @@ const DriftToSleep = () => {
             }
          </div>
          <BottomBar />
-      </>
+      </main>
    );
 }
 

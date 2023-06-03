@@ -3,16 +3,16 @@ import { BottomBar } from "./";
 
 const About = () => {
     return (
-        <>
+        <main>
             <h1 title='About us page' className="invisible">About us page</h1>
             <div className="custom-container mx-auto pt-20">
                 {
                     aboutUsSections.map((section, index) => (
                         <div key={index}>
-                            <div>
-                                <h2 className="text-5xl font-poppins font-bold uppercase text-primaryGreen text-center mb-10">{section.title}</h2>
+                            <section aria-labelledby={'about-us-section-title-' + index}>
+                                <h2 id={'section-title-' + index} className="text-5xl font-poppins font-bold uppercase text-primaryGreen text-center mb-10">{section.title}</h2>
                                 <p className="text-center font-poppins mb-10">{section.description}</p>
-                            </div>
+                            </section>
                             {
                                 section.hasMedia ?
                                     <>
@@ -33,7 +33,7 @@ const About = () => {
                 }
             </div>
             <BottomBar />
-        </>
+        </main>
     );
 }
 
