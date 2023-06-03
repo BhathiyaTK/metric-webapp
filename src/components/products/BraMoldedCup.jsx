@@ -17,8 +17,10 @@ function renderCardName(param) {
 const BraMoldedCup = () => {
    return (
       <main>
-         <div className="custom-container mx-auto pt-20">
-            <h1 className="text-4xl font-poppins font-bold capitalize text-primaryGreen text-center md:text-left">cups and underwires for<br />intimate apparel</h1>
+         <section className="custom-container mx-auto pt-20">
+            <header>
+               <h1 className="text-4xl font-poppins font-bold capitalize text-primaryGreen text-center md:text-left">cups and underwires for<br />intimate apparel</h1>
+            </header>
             <div className="w-full my-4 border border-t-primaryBlue"></div>
             <section aria-labelledby="bra-molded-cup-section">
                <h2 id="bra-molded-cup-section" className="text-4xl md:text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mt-14">bra molded cup</h2>
@@ -39,7 +41,7 @@ const BraMoldedCup = () => {
                   }
                </div>
             </section>
-         </div>
+         </section>
          <BottomBar />
       </main>
    );

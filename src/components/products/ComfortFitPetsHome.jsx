@@ -9,8 +9,10 @@ function formatTitles(param) {
 const ComfortFitPetsHome = () => {
    return (
       <main>
-         <div className="custom-container mx-auto pt-20">
-            <h1 className="text-4xl font-poppins font-bold capitalize text-primaryGreen text-center md:text-left">comfort fit pets</h1>
+         <section className="custom-container mx-auto pt-20">
+            <header>
+               <h1 className="text-4xl font-poppins font-bold capitalize text-primaryGreen text-center md:text-left">comfort fit pets</h1>
+            </header>
             <div className="w-full my-4 border border-t-primaryBlue"></div>
             {
                productCards[0].categories.map((product, indexOne) => (
@@ -26,11 +28,12 @@ const ComfortFitPetsHome = () => {
                                     </div>
                                     <h3 className="uppercase text-2xl font-semibold font-poppins text-primaryGreen text-center my-5 px-10">{type.title}</h3>
                                     <div className="mt-8 mb-20 text-center">
-                                       <a href={type.amazonLink} title="Order on amazon link" aria-label={formatTitles(product.title) + '-order-on-amazon-' + indexTwo} target="_blank"
+                                       <a href={type.amazonLink} title={product.title + ' order on amazon link ' + indexTwo} aria-label={formatTitles(product.title) + '-order-on-amazon-' + indexTwo} target="_blank"
                                           className="font-poppins uppercase font-semibold text-white rounded-xl px-5 py-2 bg-primaryGreen hover:bg-primaryBlue transition-all"
                                           accesskey="c">order on amazon</a>
                                        <br /><br />
-                                       <Link to={type.fitInstructionsLink} aria-label={formatTitles(product.title) + '-view-fit-instructions-' + indexTwo} title="Link to go to view fit instructions">
+                                       <Link to={type.fitInstructionsLink} role="link" aria-label={formatTitles(product.title) + '-view-fit-instructions-' + indexTwo}
+                                          title={'Link to go to ' + product.title + ' view fit instructions ' + indexTwo}>
                                           <span className="capitalize cursor-pointer font-poppins text-primaryBlue hover:underline underline-offset-4">
                                              View fit instructions
                                           </span>
@@ -60,7 +63,7 @@ const ComfortFitPetsHome = () => {
                ))
             }
             {/* <Modal /> */}
-         </div>
+         </section>
          <BottomBar />
       </main>
    );
