@@ -24,7 +24,7 @@ const ComfortFitPetsHome = () => {
                                     <div className="mt-8 mb-20 text-center">
                                        <a href={type.amazonLink} title="Order on amazon link" aria-label="Order on amazon" target="_blank"
                                           className="font-poppins uppercase font-semibold text-white rounded-xl px-5 py-2 bg-primaryGreen hover:bg-primaryBlue transition-all"
-                                          accessKey={type.amazonLink}>order on amazon</a>
+                                          accessKey="c">order on amazon</a>
                                        <br /><br />
                                        <Link to={type.fitInstructionsLink} aria-label={'View fit instructions ' + indexTwo} title="Link to go to view fit instructions">
                                           <span className="capitalize cursor-pointer font-poppins text-primaryBlue hover:underline underline-offset-4">
