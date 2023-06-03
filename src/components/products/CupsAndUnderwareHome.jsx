@@ -24,7 +24,7 @@ const CupsAndUnderwareHome = () => {
                               </span>
                            </div>
                            <div className="mt-10 text-center">
-                              <a href="mailto:info@metricproducts.com" aria-label="Contact metric company by sending a email" title="Contact us email on cups and underware products page" className="uppercase font-poppins font-semibold text-white bg-primaryGreen hover:bg-primaryBlue transition-all rounded-3xl px-5 py-2" accessKey="d">contact us</a>
+                              <a href="mailto:info@metricproducts.com" aria-label="Contact metric company by sending a email" title="Contact us email on cups and underware products page" className="uppercase font-poppins font-semibold text-white bg-primaryGreen hover:bg-primaryBlue transition-all rounded-3xl px-5 py-2" accesskey="d">contact us</a>
                            </div>
                         </div>
                      </div>

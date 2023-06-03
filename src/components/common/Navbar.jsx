@@ -63,6 +63,7 @@ const Navbar = () => {
           alt="menu"
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
+          accesskey="j"
         />
 
         <div role="menu" className={`${!toggle ? "hidden" : "flex"} px-3 py-6 bg-white/80 shadow-lg absolute top-20 right-0 my-5 w-full h-[89%] min-w-[140px] rounded-xl z-40 sidebar`}>
