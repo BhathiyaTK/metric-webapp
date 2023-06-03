@@ -2,6 +2,10 @@ import { Link } from 'react-router-dom';
 import { BottomBar, Modal } from '../';
 import { productCards } from '../../constants';
 
+function formatTitles(param) {
+   return param.replace(/\s+/g, '-').toLowerCase();
+}
+
 const ComfortFitPetsHome = () => {
    return (
       <main>
@@ -11,8 +15,8 @@ const ComfortFitPetsHome = () => {
             {
                productCards[0].categories.map((product, indexOne) => (
                   <div key={indexOne}>
-                     <section aria-labelledby={product.title + '-section'} className="mt-10">
-                        <h2 id={product.title + '-section'} className="text-4xl md:text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mb-10">{product.title}</h2>
+                     <section aria-labelledby={formatTitles(product.title) + '-section'} className="mt-10">
+                        <h2 id={formatTitles(product.title) + '-section'} className="text-4xl md:text-5xl font-poppins font-bold uppercase text-center text-primaryBlue mb-10">{product.title}</h2>
                         <div className="block md:flex md:flex-row justify-center md:space-x-10">
                            {
                               product.types.map((type, indexTwo) => (
@@ -22,11 +26,11 @@ const ComfortFitPetsHome = () => {
                                     </div>
                                     <h3 className="uppercase text-2xl font-semibold font-poppins text-primaryGreen text-center my-5 px-10">{type.title}</h3>
                                     <div className="mt-8 mb-20 text-center">
-                                       <a href={type.amazonLink} title="Order on amazon link" aria-labelledby="Order on amazon" target="_blank"
+                                       <a href={type.amazonLink} title="Order on amazon link" aria-label={formatTitles(product.title) + '-order-on-amazon-' + indexTwo} target="_blank"
                                           className="font-poppins uppercase font-semibold text-white rounded-xl px-5 py-2 bg-primaryGreen hover:bg-primaryBlue transition-all"
                                           accesskey="c">order on amazon</a>
                                        <br /><br />
-                                       <Link to={type.fitInstructionsLink} aria-labelledby={'View fit instructions ' + indexTwo} title="Link to go to view fit instructions">
+                                       <Link to={type.fitInstructionsLink} aria-label={formatTitles(product.title) + '-view-fit-instructions-' + indexTwo} title="Link to go to view fit instructions">
                                           <span className="capitalize cursor-pointer font-poppins text-primaryBlue hover:underline underline-offset-4">
                                              View fit instructions
                                           </span>
